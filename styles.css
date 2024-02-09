@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 13%, rgb(0, 0, 0) 56%);
+    height: 100vh;
+}
+
+@font-face {
+    position:  relative;
+    font-family: Mario;
+    src: url(/fonts/RetroMario-Regular.otf);
+}
+
+h1 {
+    position:   absolute;
+    font-family: Mario;
+    font-size: 5rem;
+}
+
+.amarillo {
+    position: absolute;
+    color: yellow;
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: black;
+}
+
+.verde {
+    position: absolute;
+    color: greenyellow;
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: black;
+}
+
+.azul {
+    color:cornflowerblue
+}
+
+.capa0 {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+}
+
+.capa1 {
+    position: absolute;
+    left: 10px;
+    top: 100px;
+    z-index: 1;
+}
+
+.capa2 {
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    z-index: 2;
+}
+
+.capa3 {
+    position: absolute;
+    left: 100px;
+    top: 40px;
+    width: calc(39.8% - 150px);
+    z-index: 3;
+    height: auto;
+}
+
+.capa4 {
+    position: absolute;
+    left: 100px;
+    top: 180px;
+    width: calc(38.8% - 150px);
+    z-index: 3;
+    height: auto;
+
+}
+   
+
+.capa3{
+    animation: caminar 7s both
+   
+}
+ 
+
+
+@keyframes caminar {
+    0% {
+        left: 0%;
+    }
+
+    20% {
+        left: 20%;
+    }
+
+    30% {
+        left: 40%;
+    }
+    
+    20% {
+        left: 20%;
+        
+    }
+    10% {
+        left: 10%;
+    }
+}
+
+.capa4 {
+    animation: bailar 7s both;
+}
+@keyframes bailar{
+    0% {
+        left: 0%;
+    }
+
+    20% {
+        left: 20%;
+    }
+
+    30% {
+        left: 40%;
+    }
+    
+    20% {
+        left: 20%;
+        
+    }
+    10% {
+        left: 10%;
+    }
+   
+}
