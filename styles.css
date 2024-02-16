@@ -8,11 +8,8 @@ body {
     height: 100vh;
 }
 
-@font-face {
-    position:  relative;
-    font-family: Mario;
-    src: url(/fonts/RetroMario-Regular.otf);
-}
+@import url();
+
 
 h1 {
     position:   absolute;
@@ -134,3 +131,11 @@ h1 {
     }
    
 }
+
+h1{
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 700;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap')
